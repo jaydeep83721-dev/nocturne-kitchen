@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#170c16">
+  <meta name="description" content="Nocturne Kitchen — contemporary Indian plates, seasonal tasting menus, and warm evenings in Bengaluru.">
+  <title>Nocturne Kitchen — Bengaluru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="reservation.css"><link rel="stylesheet" href="selection.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Nocturne Kitchen home"><span>NOCTURNE</span><small>KITCHEN</small></a>
+  <nav aria-label="Main navigation"><a href="#menu">Menu</a><a href="#story">Story</a><a href="#visit">Visit</a></nav>
+  <button class="reserve-open">Reserve a table <span>↗</span></button>
+  <button class="menu-toggle" aria-label="Reserve a table"><i></i><i></i></button>
+</header>
+<main id="top">
+  <section class="hero">
+    <img src="assets/hero.png" width="1536" height="1024" alt="Contemporary Indian dish with charred vegetables on a dark ceramic plate">
+    <div class="shade"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Bengaluru · Dinner, reimagined</p>
+      <h1>THE NIGHT<br><span>TASTES</span> DIFFERENT.</h1>
+      <div class="hero-bottom"><p>Contemporary Indian plates, led by fire, farms and the beautiful unpredictability of each season.</p><a href="#menu">Explore tonight’s menu <b>↓</b></a></div>
+    </div>
+    <div class="availability"><span class="pulse"></span><b>6 tables</b> open tonight</div>
+  </section>
+
+  <section class="marquee" aria-label="Restaurant highlights"><div>SEASONAL · LOCALLY SOURCED · FIRE-LED · UNEXPECTED · SEASONAL · LOCALLY SOURCED · FIRE-LED · UNEXPECTED ·</div></section>
+
+  <section class="menu-section" id="menu">
+    <div class="section-head"><p>Tonight’s edit / 08.09</p><h2>Built around what<br>arrived this morning.</h2><p>Our menu moves with the farms. Choose a path, then make it yours.</p></div>
+    <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+      <button role="tab" aria-selected="true" data-menu="plates">Small plates</button>
+      <button role="tab" aria-selected="false" data-menu="mains">Mains</button>
+      <button role="tab" aria-selected="false" data-menu="sweet">Sweet</button>
+    </div>
+    <div class="dish-list" aria-live="polite"></div>
+  </section>
+
+  <section class="dish-night" id="dish-night" aria-live="polite">
+    <div class="dish-night-top"><p class="eyebrow">Selected from tonight’s menu</p><span id="dish-count">01 / 09</span></div>
+    <div class="dish-night-grid">
+      <div class="dish-night-copy"><p>Dish of the Night</p><h2 id="dish-title">CHARRED<br>CAULIFLOWER</h2><p id="dish-description">Smoked almond · saffron · fenugreek</p><strong id="dish-price">₹480</strong><button class="reserve-open">Reserve & taste it <span>→</span></button></div>
+      <figure class="dish-night-media"><img id="dish-image" src="assets/menu-plates.png" width="1152" height="1440" alt="Charred Cauliflower with saffron sauce and smoked almonds"><figcaption>Tap any dish above to change this plate.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="story-number">03</div>
+    <div><p class="eyebrow">Our approach</p><h2>FAMILIAR FLAVOURS.<br>NEW INSTINCTS.</h2></div>
+    <p>We take regional memories seriously, but never literally. Each plate begins with an Indian flavour you know—and follows it somewhere new.</p>
+    <div class="orbit">OPEN KITCHEN<br><span>EVERY NIGHT</span></div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="visit-copy"><p class="eyebrow">Find your evening</p><h2>COME HUNGRY.<br>LEAVE CURIOUS.</h2><p>12 Museum Road, Bengaluru<br>Tue–Sun · 6:30 PM–11:30 PM</p><button class="reserve-open light">Book your table <span>→</span></button></div>
+    <div class="sound-card"><span>Tonight’s room</span><button id="sound" aria-label="Toggle ambient restaurant sound"><i></i><i></i><i></i><i></i><b>Play the mood</b></button><small>A tiny preview of the atmosphere. No audio file—just a gentle browser-made soundscape.</small></div>
+  </section>
+</main>
+<footer><div class="brand"><span>NOCTURNE</span><small>KITCHEN</small></div><p>Contemporary Indian dining<br>Bengaluru, India</p><div><a href="#">Instagram</a><a href="mailto:hello@nocturnekitchen.in">Email</a></div><small>© 2026 Nocturne Kitchen</small></footer>
+
+<div class="drawer" aria-hidden="true"><div class="booking-visual" aria-hidden="true"><div class="booking-glow"></div><p>AN EVENING<br>OF YOUR OWN</p><span>NOCTURNE · BENGALURU</span></div>
+  <button class="drawer-close" aria-label="Close reservation">×</button>
+  <div class="step active" data-step="1"><p class="eyebrow">Reservation / 01</p><h2>WHEN SHOULD<br>WE EXPECT YOU?</h2><div class="date-row"></div><label>Guests<select id="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option></select></label><div class="seat-picker"><p>Choose your atmosphere</p><div class="zones"><button type="button" data-zone="Chef’s Counter"><i></i><span><b>Chef’s Counter</b><small>Close to the fire</small></span></button><button type="button" data-zone="Main Room"><i></i><span><b>Main Room</b><small>In the heart of it</small></span></button><button type="button" data-zone="Garden Alcove"><i></i><span><b>Garden Alcove</b><small>Quiet & intimate</small></span></button></div></div><div class="times"><button>7:00 PM</button><button>7:45 PM</button><button>8:30 PM</button><button>9:15 PM</button></div><button class="next" disabled>Continue →</button></div>
+  <div class="step" data-step="2"><p class="eyebrow">Reservation / 02</p><h2>YOUR TABLE<br>IS ALMOST YOURS.</h2><form id="booking"><label>Name<input required autocomplete="name" placeholder="Your full name"></label><label>Phone<input required type="tel" autocomplete="tel" placeholder="+91 98765 43210"></label><label>Email<input required type="email" autocomplete="email" placeholder="you@example.com"></label><button>Confirm reservation →</button></form></div>
+  <div class="step success" data-step="3"><p class="eyebrow">You’re in</p><h2>TABLE<br>CONFIRMED.</h2><p id="confirmation"></p><button class="done">Back to the evening</button></div>
+</div>
+<div class="overlay"></div>
+<script src="script.js"></script><script src="reservation.js"></script><script src="menu-visual.js"></script>
+</body></html>
